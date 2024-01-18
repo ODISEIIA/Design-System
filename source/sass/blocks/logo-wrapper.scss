@@ -1,0 +1,47 @@
+.logo-wrapper {
+  position: relative;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 237px;
+  color: var(--logo-example);
+  background: var(--secondary-text-color);
+  border-radius: 30px;
+  transition:
+    border-color 0.5s ease,
+    background-color 0.5s ease,
+    color 0.5s ease;
+
+  &--light {
+    color: var(--secondary-text-color);
+    background: var(--logo-example);
+    border: 3px solid var(--logo-example);
+  }
+
+  &--different {
+    color: var(--secondary-text-color);
+    background: var(--secondary-background-color);
+    border-color: transparent;
+  }
+
+  &--list {
+    min-height: 118px;
+  }
+
+  &--invalid-color {
+    color: var(--icons-invalid-color);
+  }
+}
+
+.logo-wrapper__element {
+  position: absolute;
+  top: 50%;
+  left: 179px;
+  color: var(--word-logo-color);
+  transition: color 0.5s ease;
+  transform: translateY(-50%);
+
+  &--proportion {
+    left: 202px;
+  }
+}

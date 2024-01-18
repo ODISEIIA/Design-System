@@ -1,0 +1,57 @@
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 266px;
+  height: 266px;
+  color: var(--logo-example);
+  background: var(--secondary-text-color);
+  border-radius: 30px;
+  transition:
+    border-color 0.5s ease,
+    background-color 0.5s ease,
+    color 0.5s ease;
+
+  &--light {
+    color: var(--secondary-text-color);
+    background: var(--logo-example);
+    border: 3px solid var(--logo-example);
+  }
+
+  &--different {
+    color: var(--secondary-text-color);
+    background: var(--secondary-background-color);
+    border-color: transparent;
+  }
+
+  &--list {
+    width: auto;
+    height: 166px;
+  }
+
+  &--invalid-color {
+    color: var(--icons-invalid-color);
+  }
+
+  &--rotate {
+    svg {
+      position: relative;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.icon-wrapper__element {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: var(--word-logo-color);
+  transition: color 0.5s ease;
+  transform: translateY(-50%);
+
+  &--proportion {
+    top: 48%;
+    left: 15px;
+  }
+}

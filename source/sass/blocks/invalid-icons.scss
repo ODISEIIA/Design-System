@@ -1,0 +1,11 @@
+.invalid-icons__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.invalid-icons__list-item {
+  &--big {
+    grid-column-end: span 2;
+  }
+}
