@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, Прогресс-бар, HTML, CSS, студенческий проект">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Дизайн-система Healify. Прогресс-бар</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom">
+        <div class="header__content">
+          <h1 class="header__title title">Прогресс-бар</h1>
+          <p class="header__text">Прогресс&#8211;бары мотивируют пользователей к регулярной медитации, создают ощущение выполненных шагов и улучшают понимание собственного прогресса, повышая внутреннюю мотивацию и благополучие.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/medit.webp 1x,img/medit@2x.webp 2x">
+          <img class="header__image" src="img/medit.png" srcset="img/medit@2x.png 2x"
+            alt="Девушка, занимающаяся медитацией" width="399" height="357">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="pb-rule main-inner__section observed-section" id="pb-rule">
+          <h2 class="main-inner__title title title--middle">Прогресс-бар</h2>
+          <p class="pb-rule__text main-inner__subtitle">Прогресс&#8211;бар &#8211; это индикатор, который отображает прогресс выполнения задачи. Мы используем прогресс-бары для отслеживания успехов пользователей в работе с приложением.</p>
+        </section>
+        <section class="pb-rule main-inner__section observed-section" id="pb-rule">
+          <h3 class="main-inner__title title title--middle">Принцип работы</h3>
+          <p class="pb-rule__text main-inner__subtitle">Прогресс&#8211;бар делится на отрезки пропорционально количеству баллов, которые должен получить пользователь для получения достижения. Например, для того, чтобы получить достижение &ldquo;Бесконечный заряд&rdquo;, необходимо набрать 150 баллов, занимаясь ежедневно в течении недели. Опираясь на систему баллов, одна непрерывная неделя будет равно 15 баллам, поэтому для данного прогресс&#8211;бара логично за единицу взять 10&#37; &#8211; 15 баллов от 100&#37; &#8211; 150 баллов. Значит получатся такие отрезки&#58;</p>
+          <picture class="pb-rule__image main-inner__title">
+            <source type="image/webp" srcset="img/progress-bar.webp 1x,img/progress-bar@2x.webp 2x">
+            <img class="pb-rule__image" src="img/progress-bar.png" srcset="img/progress-bar@2x.png 2x" alt="Разбивка прогресс-бара на отрезки"
+              width="764" height="40">
+          </picture>
+          <p class="pb-rule__text main-inner__subtitle">Шкала заполняется после серии завершенных упражнений в течении 7&#8211;ми дней. В случае других достижений, шкала будет заполняться основываясь на систему баллов.</p>
+        </section>
+        <section class="pb-label main-inner__section observed-section" id="pb-label">
+          <h3 class="main-inner__title title title--middle">Подпись</h3>
+          <p class="pb-label__text main-inner__subtitle">Пользователю необходимо знать на каком этапе получения достижения он сейчас находится, поэтому важно использовать подписи.</p>
+          <p class="pb-label__text main-inner__subtitle">Пример подписи прогресс&#8211;бара для достижения &ldquo;Бесконечный заряд&rdquo;&#58;</p>
+          <picture class="pb-label__image main-inner__title">
+            <source type="image/webp" srcset="img/pb-label.webp 1x,img/pb-label@2x.webp 2x">
+            <img class="pb-label__image" src="img/pb-label.png" srcset="img/pb-label@2x.png 2x" alt="Пример подписи прогресс-бара"
+              width="764" height="40">
+          </picture>
+      </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>
