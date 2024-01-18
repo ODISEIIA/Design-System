@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, Иллюстрации, HTML, CSS, студенческий проект">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Дизайн-система Healify. Иллюстрации</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom">
+        <div class="header__content">
+          <h1 class="header__title title">Иллюстрации</h1>
+          <p class="header__text">Красочные и спокойные иллюстрации способствуют расслаблению, создавая приятное визуальное восприятие для пользователя.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/Flowerdude.webp 1x,img/Flowerdude@2x.webp 2x">
+          <img class="header__image" src="img/Flowerdude.png" srcset="img/Flowerdude@2x.png 2x"
+            alt="Мужчина с цветком" width="412" height="412">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="characters main-inner__section observed-section" id="characters">
+          <h2 class="main-inner__title title title--middle">Персонажи</h2>
+          <p class="characters__text main-inner__subtitle">Персонажи, которых мы создали, создают атмосферу комфорта и безопасности, а также дополняют текстовую информацию, делая ее более доступной и запоминающейся.</p>
+          <picture class="characters__image main-inner__title">
+            <source type="image/webp" srcset="img/characters-set.webp 1x,img/characters-set@2x.webp 2x">
+            <img class="characters__image" src="img/characters-set.png" srcset="img/characters-set@2x.png 2x" alt="Коллекция персонажей"
+              width="761" height="780">
+          </picture>
+        </section>
+        <section class="achieves main-inner__section observed-section" id="achieves">
+          <h2 class="main-inner__title title title--middle">Достижения</h2>
+          <p class="achieves__text main-inner__subtitle">Система коллекций с разнообразными наградами стимулирует пользователя собирать все достижения, создавая дополнительный источник мотивации. Которая в свою очередь непременно приведет к приятному результату.</p>
+          <picture class="achieves__image main-inner__title">
+            <source type="image/webp" srcset="img/achive-set.webp 1x,img/achive-set@2x.webp 2x">
+            <img class="achieves__image" src="img/achive-set.png" srcset="img/achive-set@2x.png 2x" alt="Коллекция достижений"
+              width="759" height="360">
+          </picture>
+        </section>
+        <section class="achieves main-inner__section observed-section" id="achieves">
+          <h2 class="main-inner__title title title--middle">Иконки</h2>
+          <p class="icons__text main-inner__subtitle">Иконки предоставляют интуитивно понятные символы, которые быстро передают информацию о конкретной функции, уменьшая необходимость в текстовых пояснениях.</p>
+          <div class="icon-set-box">
+            <svg width="760" height="531">
+            <use xlink:href="img/icons.svg#icon-set"></use>
+            </svg>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>
