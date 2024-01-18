@@ -59,6 +59,10 @@
     padding: 20px 10px 10px 10px;
   }
 
+  &--first:first-child {
+    padding: 20px 10px 10px 60px;
+  }
+
   &--first:last-child {
     padding: 20px 57px 10px 0;
   }

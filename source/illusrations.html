@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, иллюстрация, HTML, CSS, студенческий проект">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Дизайн-система Healify. Иллюстрации</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom header__bottom--micro-grid">
+        <div class="header__content">
+          <h1 class="header__title title">Иллюстрации</h1>
+          <p class="header__text header__text--score">Красочные и&nbsp;спокойные иллюстрации способствуют расслаблению,
+            создавая приятное визуальное восприятие для пользователя.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/Flowerdude.webp 1x,img/Flowerdude@2x.webp 2x">
+          <img class="header__image" src="img/Flowerdude.png" srcset="img/Flowerdude@2x.png 2x"
+            alt="Парень в синей кофте и с желтым цветком в руке" width="412" height="364">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="characters main-inner__section">
+          <h2 class="main-inner__title title title--middle">Персонажи</h2>
+          <p class="score-types main-inner__title">Персонажи, которых мы&nbsp;создали, создают атмосферу комфорта
+            и&nbsp;безопасности, а&nbsp;также дополняют текстовую информацию, делая ее&nbsp;более доступной
+            и&nbsp;запоминающейся.</p>
+            <picture class="characters__picture">
+              <source type="image/webp" srcset="img/characters.webp 1x,img/characters@2x.webp 2x">
+              <img class="characters__image" src="img/characters.png" srcset="img/characters@2x.png 2x"
+                alt="Коллекция персонажей" width="759" height="780">
+            </picture>
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>

@@ -83,6 +83,10 @@
   gap: 188px;
   align-items: center;
   min-height: 372px;
+
+  &--micro-grid {
+    gap: 20px;
+  }
 }
 
 .header__title {
@@ -91,4 +95,8 @@
 
 .header__text {
   margin: 0;
+
+  &--score {
+    max-width: 582px;
+  }
 }
