@@ -42,13 +42,10 @@
     padding: 19px 66px;
     font-size: 1.2222rem;
     color: var(--secondary-text-color);
-    // background-color: var(--secondary-background-color);
 
     &:hover {
       color: var(--primary-background-color);
       background-color: var(--secondary-text-color);
-      // border-color: var(--secondary-text-color);
-      // border: 3px solid var(--primary-text-color);
     }
   }
 }
