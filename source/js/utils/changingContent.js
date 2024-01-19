@@ -6,8 +6,11 @@ const activeMenuLink = document.querySelector('.header__menu-link--mission');
 const invalidPages = ['/', 'index'];
 
 if (!invalidPages.includes(currentPage)) {
-  link.href = 'index.html';
   footer.classList.remove('footer__social-list--active');
+}
+
+if (invalidPages.includes(currentPage)) {
+  link.removeAttribute('href');
 }
 
 if (currentPage === 'mission') {
