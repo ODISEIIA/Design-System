@@ -68,7 +68,10 @@ gulp.task('scripts', () => {
 
 gulp.task('optimizeImages', () => {
   return gulp
-    .src('source/img/**/*.{png,jpg,svg}')
+    .src([
+      'source/img/**/*.{png,jpg,svg}',
+      '!source/img/favicons/*.png',
+    ])
     .pipe(imagemin())
     .pipe(gulp.dest('build/img'));
 })
@@ -79,11 +82,20 @@ gulp.task('copyImages', () => {
     .pipe(gulp.dest('build/img'))
 })
 
+gulp.task('copyFavicons', () => {
+  return gulp
+    .src('source/img/favicons/*.png')
+    .pipe(gulp.dest('build/img/favicons'))
+})
+
 // WebP
 
 gulp.task('createWebp', () => {
   return gulp
-    .src('source/img/**/*.{jpg,png}')
+    .src([
+      'source/img/**/*.{jpg,png}',
+      '!source/img/favicons/*.png',
+    ])
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest('build/img'))
 })
@@ -114,6 +126,8 @@ gulp.task('copy', (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
+    "source/manifest.webmanifest",
+    "source/browserconfig.xml",
     "source/img/**/*.svg",
     "!source/img/icons/*.svg",
   ], {
@@ -177,7 +191,8 @@ gulp.task('build', gulp.series(
     'html',
     'scripts',
     'sprite',
-    'createWebp'
+    'createWebp',
+    'copyFavicons'
   )
 ))
 

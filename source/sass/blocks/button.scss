@@ -10,7 +10,7 @@
   cursor: pointer;
   background-color: transparent;
   border: 3px solid var(--primary-text-color);
-  border-radius: 27px;
+  border-radius: 30px;
   transition:
     color 0.5s ease,
     background-color 0.5s ease,
@@ -32,7 +32,7 @@
   }
 
   &--active {
-    pointer-events: all;
+    pointer-events: auto;
     opacity: 1;
   }
 
@@ -42,13 +42,10 @@
     padding: 19px 66px;
     font-size: 1.2222rem;
     color: var(--secondary-text-color);
-    // background-color: var(--secondary-background-color);
 
     &:hover {
       color: var(--primary-background-color);
       background-color: var(--secondary-text-color);
-      // border-color: var(--secondary-text-color);
-      // border: 3px solid var(--primary-text-color);
     }
   }
 }

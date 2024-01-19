@@ -33,4 +33,3 @@ if (form) {
     modal.classList.remove('modal--active');
   });
 }
-

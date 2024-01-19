@@ -1,0 +1,26 @@
+.progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  background-color: var(--card-background);
+  border-radius: 20px;
+
+  &--gradient {
+    background: repeating-linear-gradient(to right, var(--card-background) 0, var(--card-background) 68.9px, var(--secondary-text-color) 68.9px, var(--secondary-text-color) 69.9px);
+  }
+}
+
+.progress__meter {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: var(--secondary-text-color);
+  border-radius: 20px;
+  transition: width 70ms ease;
+
+  &--first {
+    width: 38%;
+  }
+}

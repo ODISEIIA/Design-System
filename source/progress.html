@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Дизайн-система Healify">
+  <meta name="keywords" content="дизайн-система, Healify, прогресс-бар, HTML, CSS, студенческий проект">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#213457">
+  <meta name="msapplication-TileColor" content="#bdc3d5">
+  <meta name="theme-color" content="#c88585">
+  <title>Дизайн-система Healify. Прогресс бар</title>
+</head>
+
+<body class="page-body">
+  @@include('./blocks/theme.html')
+  <header class="header">
+    <div class="container">
+      @@include('./blocks/header.html')
+      <section class="header__bottom header__bottom--micro-grid">
+        <div class="header__content">
+          <h1 class="header__title title">Прогресс бар</h1>
+          <p class="header__text header__text--score">Прогресс-бары мотивируют пользователей к&nbsp;регулярной
+            медитации, создают ощущение выполненных шагов и&nbsp;улучшают понимание собственного прогресса, повышая
+            внутреннюю мотивацию и&nbsp;благополучие.</p>
+        </div>
+        <picture class="header__picture">
+          <source type="image/webp" srcset="img/sitting-girl.webp 1x,img/sitting-girl@2x.webp 2x">
+          <img class="header__image" src="img/sitting-girl.png" srcset="img/sitting-girl@2x.png 2x"
+            alt="Темноволосая девушка с цветком в волосах размышляет" width="412" height="364">
+        </picture>
+      </section>
+    </div>
+  </header>
+  <main class="main-inner">
+    <div class="container container--inner">
+      @@include('./blocks/nav.html')
+      <div class="inner-content">
+        <section class="progress-principle main-inner__section observed-section" id="progress-principle">
+          <h2 class="main-inner__title title title--middle">Принцип работы</h2>
+          <p class="main-inner__title">Прогресс-бар&nbsp;&mdash; это индикатор, который отображает
+            прогресс выполнения задачи. Мы&nbsp;используем прогресс-бары для отслеживания успехов пользователей
+            в&nbsp;работе с&nbsp;приложением.</p>
+          <div class="progress-wrapper main-inner__title">
+            <div class="progress" aria-label="Прогресс бар">
+              <div class="progress__meter progress__meter--first" aria-label="Ползунок"></div>
+            </div>
+          </div>
+          <p class="main-inner__title">Прогресс-бар делится на&nbsp;отрезки пропорционально количеству баллов, которые
+            должен получить пользователь для получения достижения. Например, для того, чтобы получить достижение
+            &laquo;Бесконечный заряд&raquo;, необходимо набрать 150&nbsp;баллов, занимаясь ежедневно в&nbsp;течении
+            недели. Опираясь на&nbsp;систему баллов, одна непрерывная неделя будет равно 15&nbsp;баллам, поэтому для
+            данного прогресс-бара логично за&nbsp;единицу взять 10%&nbsp;&mdash; 15&nbsp;баллов
+            от&nbsp;100%&nbsp;&mdash; 150&nbsp;баллов. Значит получатся такие отрезки:</p>
+          <div class="progress-wrapper main-inner__title">
+            <div class="progress progress--gradient" aria-label="Прогресс бар">
+              <div class="progress__meter" aria-label="Ползунок"></div>
+            </div>
+          </div>
+          <p class="main-inner__text">Шкала заполняется после серии завершенных упражнений в&nbsp;течении 7-ми дней.
+            В&nbsp;случае других достижений, шкала будет заполняться основываясь на&nbsp;систему баллов</p>
+        </section>
+        <section class="progress-label main-inner__section observed-section" id="progress-label">
+          <h2 class="main-inner__title title title--middle">Подпись</h2>
+          <p class="main-inner__subtitle">Пользователю необходимо знать на&nbsp;каком этапе получения достижения
+            он&nbsp;сейчас находится, поэтому важно использовать подписи.</p>
+          <p class="main-inner__title">Пример подписи прогресс-бара для достижения &laquo;Бесконечный заряд&raquo;:</p>
+          <span class="progress-label__title">Бесконечный заряд</span>
+          <div class="progress-wrapper main-inner__title">
+            <span class="progress-label__label" aria-label="Значение прогресс бара"></span>
+            <div class="progress progress--active" aria-label="Прогресс бар">
+              <div class="progress__meter progress__meter--active" aria-label="Ползунок"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  @@include('./blocks/footer.html')
+  <script src="./js/bundle.js"></script>
+</body>
+
+</html>

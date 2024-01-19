@@ -10,7 +10,6 @@
   --box-shadow-card: 0px 4px 15px 6px rgba(161, 170, 196, 0.4);
   --icon-background: #212121;
   --error-color: #b20d0d;
-  --input-background: #dedfe2;
   --like-color: #3b639c;
   --span-element-color: #fefefe;
   --valid-color: #157725;
@@ -22,6 +21,9 @@
   --table-border-color: #49608c;
   --table-text-header-color: #e6e6e6;
   --border-principle-gradient: rgba(145, 156, 180, 0.4);
+  --word-logo-color: rgb(13%, 20%, 34%, 0.5);
+  --logo-example: #bdc3d5;
+  --icons-invalid-color: #c03f4c;
 }
 
 .dark {
@@ -72,5 +74,26 @@
       background-color: transparent;
       border-color: var(--secondary-text-color);
     }
+  }
+
+  .logo-wrapper,
+  .icon-wrapper {
+    &--light {
+      border-color: var(--secondary-text-color);
+    }
+
+    &--different {
+      color: var(--primary-background-color);
+    }
+  }
+
+  .logo-wrapper__element,
+  .icon-wrapper__element {
+    color: var(--secondary-border-color);
+  }
+
+  .logo-wrapper--invalid-color,
+  .icon-wrapper--invalid-color {
+    color: var(--icons-invalid-color);
   }
 }

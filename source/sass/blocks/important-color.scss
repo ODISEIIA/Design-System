@@ -11,6 +11,7 @@
   gap: 30px;
   align-items: center;
   padding: 33px 46px;
-  border: 3px solid var(--secondary-border-color);
+  border: 3px solid var(--table-border-color);
   border-radius: 30px;
+  transition: border-color 0.5s ease;
 }

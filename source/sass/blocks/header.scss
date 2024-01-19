@@ -1,5 +1,5 @@
 .header {
-  padding: 55px 0 60px 0;
+  padding: 55px 0 45px 0;
   margin: 0 0 70px 0;
   background-color: var(--secondary-background-color);
   transition: background-color 0.5s ease;
@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: minmax(87px, min-content) 1fr;
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .header__menu {
@@ -82,6 +82,11 @@
   grid-template-columns: 1fr 412px;
   gap: 188px;
   align-items: center;
+  min-height: 372px;
+
+  &--micro-grid {
+    gap: 20px;
+  }
 }
 
 .header__title {
@@ -90,4 +95,8 @@
 
 .header__text {
   margin: 0;
+
+  &--score {
+    max-width: 582px;
+  }
 }
