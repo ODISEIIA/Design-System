@@ -22,9 +22,9 @@
   line-height: 150%;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
-  background-color: var(--input-background);
+  background-color: var(--card-background);
   border: 2px solid var(--scrollbar-track-color);
-  border-radius: 26px;
+  border-radius: 30px;
   transition:
     border-color 0.5s ease,
     color 0.3s ease;
