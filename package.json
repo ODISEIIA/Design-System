@@ -11,9 +11,9 @@
     "start": "gulp"
   },
   "browserslist": [
+    "> 0.5%",
     "last 2 versions",
-    "not dead",
-    "not ie <= 11"
+    "not dead"
   ],
   "editorconfig-cli": [
     "*.json",
@@ -33,9 +33,9 @@
     "semester"
   ],
   "authors": [
+    "Gyallarhorn",
     "Beta Aquarius",
-    "Ersova Ksenia",
-    "Gyallarhorn"
+    "Ersova Ksenia"
   ],
   "license": "ISC",
   "devDependencies": {
