@@ -1,5 +1,6 @@
 {
   "name": "design-system",
+  "homepage": "https://Gyallarhorn.github.io/Design-System",
   "version": "1.0.0",
   "description": "This repository contains the final project for the course \"Technical implementation of a design system for a web platform\"",
   "main": "index.html",
@@ -8,7 +9,9 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" ",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "> 0.5%",
@@ -44,6 +47,7 @@
     "@htmlacademy/editorconfig-cli": "^2.0.5",
     "autoprefixer": "^10.4.16",
     "browser-sync": "^2.29.3",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
