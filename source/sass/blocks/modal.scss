@@ -70,7 +70,7 @@
 }
 
 .modal.modal--active {
-  pointer-events: all;
+  pointer-events: auto;
   visibility: visible;
   opacity: 1;
 

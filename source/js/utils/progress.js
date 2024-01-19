@@ -14,7 +14,7 @@ const changeProgress = () => {
 
 if (progress) {
   progressText.textContent = `${progress.getAttribute('value')}%`;
-  const time = 5000 / 100;
+  const time = 7000 / 100;
 
   const progressAnimation = setInterval(changeProgress, time);
 }
